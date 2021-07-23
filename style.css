@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;500&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    font-weight: 200;
+    background-color: rgb(231, 231, 231);
+    font-size: 15px;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 10px;
+}
+header {
+    background-color: white;
+    box-shadow: 0 2px 2px 0 #ccc;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    height: 50px;
+    padding: 15px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.logo a{
+    padding: 12px 0;
+}
+h1 {
+    font-weight: 500;
+    margin: 0 10px;
+    display: inline;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+.menu > div {
+    height: 50px;
+    padding: 15px;
+}
+a:hover {
+    background-color: rgb(255, 223, 176);
+}
+.menu:hover ul{
+    display: block;
+}
+@media screen and (min-width: 790px) {
+    .menu ul{
+        display: inline-block;
+        position: unset;
+    }
+    .menu ul li {
+        display: inline-block;
+    }
+    .menu > div{
+        display: none;
+    }
+}
+@media screen and (min-width: 600px) {
+    main {
+        display: flex;
+    }
+    .une {
+        width: 60%;
+    }
+    .deux {
+        width: 40%;
+    }
+}
+h2 {
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0;
+}
+#image img{
+    width: 100%;
+}
+hr {
+    border-top: 1px solid rgb(212, 212, 212);
+}
+article {
+    background-color: white;
+    padding: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 4px 0 #ccc;
+}
+article .soustitre {
+    font-size: 12px;
+}
+.infos {
+    display: block;
+}
+@media screen and (min-width: 600px) {
+    .infos {
+        display: flex;
+    }
+}
+section {
+    margin: 30px 5px;
+}
+.apercu {
+    width: 120px;
+    height: 120px;
+    background-color: grey;
+    color: white;
+    margin: 0 10px 20px 0;
+}
+.adresse article {
+    padding: 0;
+    width: 150px;
+    margin: 0;
+}
+table {
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: left;
+}
+td {
+    text-align: right;
+}
+th {
+    font-weight: 500;
+}
+footer {
+    background-color: white;
+    font-size: 12px;
+    padding: 40px 0;
+    border-top: 1px dashed #ccc;
+}
+@media screen and (min-width: 600px) {
+    footer .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+footer div {
+    margin: 20px 10px;
+}
+footer .logo {
+    margin: 0;
+}
+footer .tags li {
+    display: inline-block;
+    margin: 10px 20px 0 0;
+    padding: 5px 10px 5px 23px;
+    background-color: #eee;
+    position: relative;
+}
+.tags ul li::before {
+    position: absolute;
+    content: '';
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 50%;
+    left: 8px;
+    top: 8px;
+    box-shadow: inset -1px 1px 1px gray;
+}
+.tags ul li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -24px;
+    border: solid 12px #eee;
+    border-top: solid 12px transparent;
+    border-right: solid 12px transparent;
+    border-bottom: solid 12px transparent;
+}
+footer ul {
+    margin: 15px 0;
+}
+footer a {
+    padding: 0;
+    height: 15px;
+}
